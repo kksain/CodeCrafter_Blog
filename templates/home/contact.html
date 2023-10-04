@@ -2,8 +2,8 @@
 {% block title %} Contact Us {% endblock title %}
 {% block body %}
 <div class="container my-3">
-    <form>
-
+    <form method="post" action="/contact">
+        {% csrf_token %}
         <div class="mb-3">
             <label for="name" class="form-label">Name</label>
             <input type="text" id="name" name="name" class="form-control" placeholder="Name" aria-label="Name">
@@ -20,8 +20,8 @@
             <input type="phone" id="phone" name="phone" class="form-control" id="phoneNumber">
         </div>
         <div class="mb-3">
-            <label for="text" class="form-label">What Can We Help For You?</label>
-            <input type="textarea" class="form-control" id="textarea">
+            <label for="content" class="form-label">What Can We Help For You?</label>
+            <textarea type="textarea" class="form-control" name="content" id="content"></textarea>
         </div>
 
         <button type="submit" class="btn btn-primary">Submit</button>
