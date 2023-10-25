@@ -4,11 +4,12 @@ python -m venv myvirtualenv
 ### Activate virtual environment
 myvirtualenv\Scripts\activate
 
+### Start Project
+django-admin startproject CodeCrafter
+
 ### Install Requirement
 pip install -r requirements.txt
 
-### Start Project
-django-admin startproject CodeCrafter
 
 ### Migration
 python manage.py migrate
