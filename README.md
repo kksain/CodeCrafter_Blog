@@ -5,7 +5,7 @@ python -m venv myvirtualenv
 myvirtualenv\Scripts\activate
 
 ## Clone the repository:
-- git clone https://github.com/your-username/textutils.git
+- git clone https://github.com/kksain/textutils.git
 
 ## Navigate to the project directory:
 - cd CodeCrafter_Blog
