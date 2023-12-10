@@ -4,15 +4,19 @@ python -m venv myvirtualenv
 ### Activate virtual environment
 myvirtualenv\Scripts\activate
 
-### Start Project
-django-admin startproject CodeCrafter
+## Clone the repository:
+- git clone https://github.com/your-username/textutils.git
 
-### Install Requirement
+## Navigate to the project directory:
+- cd CodeCrafter_Blog
+
+### Install dependencies:
 pip install -r requirements.txt
 
-
-### Migration
+### Apply database migrations:
 python manage.py migrate
 
-### Create Superuser
-python manage.py createsuperuser
+## Run the development server:
+- python manage.py runserver
+
+## Access the application at http://localhost:8000/.
